@@ -1,3 +1,4 @@
+require('dotenv').config();
 const router = require('express').Router();
 const db = require('../api/dbModel.js');
 const bcrypt = require('bcryptjs');
