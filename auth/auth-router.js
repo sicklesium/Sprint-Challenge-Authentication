@@ -12,7 +12,7 @@ router.post('/register', (req, res) => {
 
   db.add(user)
     .then((user) => {
-      res.status(201).json({ message: `Welcome to Dad Jokes, ${user.username}!` })
+      res.status(201).json({ message: `Welcome to Dad Jokes!` })
     })
     .catch((err) => {
       res.status(500).json({ errorMessage: "There was an error with registering!", err })
